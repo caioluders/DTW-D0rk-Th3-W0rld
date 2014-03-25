@@ -166,7 +166,7 @@ if __name__ == "__main__":
 
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-d' , '--dork' , type=str , help='The dork to search' , required=True)
-	parser.add_argument('--cmd' , help='Command to execute with the URL/IP. Example : --dork="ping -c 5 ^URL^"' , required=True)
+	parser.add_argument('--cmd' , help='Command to execute with the URL/IP. Example : --cmd="ping -c 5 ^URL^"' , required=True)
 	parser.add_argument('-p' , '--pages' , type=int , default=5 , help='Number of pages to get from Google' )
 	parser.add_argument('--delay' , type=int , default=1 , help='Delay time in secs ( Default = 1 s )' )
 	parser.add_argument('--type' , action='store' , default="url" , help='Determinate the type of the URL output ( url , ip , path )')

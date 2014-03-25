@@ -31,7 +31,7 @@ Note that in the parameter "cmd" he will change the "^URL^" to the site n-times 
 |-------------------|:----------------------------------:|
 |-d, --help         |   show this help message and exit       
 |--d DORK, --dork DORK  | The dork to search         
-|--cmd CMD |   Command to execute with the URL/IP. Example : --dork="ping -c 5 ^URL^"
+|--cmd CMD |   Command to execute with the URL/IP. Example : --cmd="ping -c 5 ^URL^"
 |-p PAGES, --pages PAGES |   Number of pages to get from Google
 |--delay DELAY    |   Delay time in secs ( Default = 1 s )
 |--type TYPE | Determinate the type of the URL output ( url , ip or path )
