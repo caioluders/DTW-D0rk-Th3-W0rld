@@ -77,7 +77,7 @@ class Google_parser(object) :
 
 			if self.proxy_on :	
 				try :
-					proxy_in = {"http":"http://%s" % self.proxy[random.randint(0,len(self.proxy)-1)]}	
+					proxy_in = {"http":"http://%s" % self.proxy[random.choice(self.proxy)]}	
 					proxy_support = urllib2.ProxyHandler(proxy_in)	
 					opener = urllib2.build_opener(proxy_support)
 					urllib2.install_opener(opener)
@@ -86,7 +86,7 @@ class Google_parser(object) :
 
 			self.google_post = self.google +'/ajax/services/search/web?v=2.0&rsz=8&q=%s&start=%s&userip=%s' %(self.dork,self.loop,self.ip)
 
-			self.header = {'User-Agent' : self.agents[random.randint(0,len(self.agents)-1)]}
+			self.header = {'User-Agent' : self.agents[random.choice(self.agents)]}
 
 			try :
 				self.req = urllib2.Request(self.google_post,None,self.header)
