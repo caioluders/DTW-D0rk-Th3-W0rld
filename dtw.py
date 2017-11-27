@@ -1,7 +1,4 @@
 # !/usr/bin/python
-#
-# Author: geolado | g3ol4d0
-# Email : g3ol4d0[at]gmail.com
 # Python 2.7
 
 # To do : 1 - Making the Google Parser better and more efficient , Google Ajax obtains less results and ban easily
